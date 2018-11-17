@@ -1,5 +1,6 @@
 import os
 
+import numpy as np
 from keras.preprocessing.image import img_to_array
 from PIL import Image
 
@@ -23,4 +24,4 @@ class ImageLoader(object):
         self.height = h
 
     def get_as_array(self):
-        return img_to_array(self.img)
+        return np.expand_dims(img_to_array(self.img), axis=0)
