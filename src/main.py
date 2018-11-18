@@ -5,7 +5,7 @@ from keras.applications import vgg16
 from scipy.misc import imsave
 from scipy.optimize import fmin_l_bfgs_b
 
-from loaders.image_loader import ImageLoader
+from data_processing.image_loader import ImageLoader
 from model.model import StyleTransferModel
 from model.model_evaluater import Evaluator
 

@@ -1,6 +1,6 @@
 import unittest
 
-from src.loaders.image_loader import ImageLoader
+from src.data_processing.image_loader import ImageLoader
 
 
 class ImageLoaderChecker(unittest.TestCase):
